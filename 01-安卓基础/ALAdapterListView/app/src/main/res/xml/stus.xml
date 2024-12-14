@@ -1,0 +1,22 @@
+<stus>
+    <stu>
+        <name>韩信</name>
+        <age>20</age>
+    </stu>
+    <stu>
+        <name>李白</name>
+        <age>22</age>
+    </stu>
+    <stu>
+        <name>王昭君</name>
+        <age>18</age>
+    </stu>
+    <stu>
+        <name>虞姬</name>
+        <age>21</age>
+    </stu>
+    <stu>
+        <name>貂蝉</name>
+        <age>20</age>
+    </stu>
+</stus>

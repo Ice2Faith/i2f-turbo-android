@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 直接使用fragment来放置一个Fragment到布局中
+            可以绑定一个ID
+            name属性指定他的实现类，这个实现类继承自Fragment,
+                并且实现了onCreateView方法
+             在设计界面上是看不到的，只能直接运行
+             并且可以放置多个
+         -->
+        <fragment
+            android:id="@+id/myFragmentDemo"
+            android:name="com.ugex.savelar.aufragment.FragmentDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <!--
+        <fragment
+            android:id="@+id/myFragmentDemo2"
+            android:name="com.ugex.savelar.aufragment.FragmentDemo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+           -->
+        <Button
+            android:id="@+id/buttonFmtChange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="更改Fragment文字" />
+        <!-- 查找Fragment时，可以通过他的id属性进行查找，也可以通过他的tag属性进行查找 -->
+        <fragment
+            android:id="@+id/myFragmentManagerTest"
+            android:name="com.ugex.savelar.aufragment.FragmentManagerTest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/buttonDynamicFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动态添加Fragment" />
+
+        <Button
+            android:id="@+id/buttonSystemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用系统Fragment" />
+        <Button
+            android:id="@+id/buttonAutoSuitFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自动横竖屏适配Fragment" />
+        <Button
+            android:id="@+id/buttonScollGuideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="滑动导航页Fragment" />
+        <Button
+            android:id="@+id/buttonStableGuideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="固定导航页Fragment" />
+        <Button
+            android:id="@+id/buttonStartWelcomeViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开始欢迎页Fragment" />
+        <Button
+            android:id="@+id/buttonDrawerGuideViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="侧滑式导航页页Fragment" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

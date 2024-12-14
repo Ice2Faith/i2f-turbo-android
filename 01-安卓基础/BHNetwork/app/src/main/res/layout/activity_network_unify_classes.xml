@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UnifyNetClasses.NetworkUnifyClassesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonViewNetInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnViewNetInfoClicked"
+                android:text="查看网络信息" />
+
+            <Button
+                android:id="@+id/buttonCheckNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnCheckNetworkClicked"
+                android:text="检查网络状态" />
+
+            <EditText
+                android:id="@+id/editTextNewInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextNetworkUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="输入网络地址"
+                android:inputType="textPersonName"
+                tools:text="https://" />
+            <EditText
+                android:id="@+id/editTextDownSaveAsFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="输入保存为的文件名"
+                android:inputType="textPersonName"
+                tools:text=".html" />
+
+            <Button
+                android:id="@+id/buttonDownUrlData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="下载数据"
+                android:onClick="onBtnDownloadUrlDataClicked"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelytface"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewfinish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/CongraduateLoginSuccess"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textViewtouch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img"
+        android:text="@string/SlideToLogin"
+        android:textSize="30sp"
+        android:gravity="bottom|center_horizontal"
+        android:layout_margin="10dp"/>
+</FrameLayout>

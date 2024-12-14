@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MyStringFile">我的字符串资源xml文件</string>
+</resources>

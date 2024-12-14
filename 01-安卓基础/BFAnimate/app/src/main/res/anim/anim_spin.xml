@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="0"
+    android:toDegrees="3600"
+    android:duration="3000"
+    android:pivotX="50%"
+    android:pivotY="50%">
+    <!-- 从0度旋转到3600度持续3000毫秒
+     默认旋转中心为组件右上角，通过
+     pivot可以设置旋转中心-->
+
+</rotate>

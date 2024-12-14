@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ASUnifyUILayoutDrill</string>
+    <string name="tab_bar_guide">主页</string>
+    <string name="tab_bar_msg">消息</string>
+    <string name="tab_bar_img">相册</string>
+    <string name="tab_bar_set">设置</string>
+</resources>

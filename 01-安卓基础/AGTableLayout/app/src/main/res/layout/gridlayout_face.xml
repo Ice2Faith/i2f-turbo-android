@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rowCount="6" 指定行数 columnCount="4" 指定列数 -->
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:rowCount="6"
+    android:columnCount="4">
+    <!-- layout_columnSpan="4" 直接占用一行 后面加入的会自动换行 -->
+    <TextView
+        android:layout_columnSpan="4"
+        android:textSize="50sp"
+        android:text="This is a Line Text"
+        />
+
+    <!-- layout_columnSpan="2" 占用两列 layout_gravity="fill" 并填满 -->
+    <Button
+        android:text="button1"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill"
+    />
+    <!-- layout_rowSpan="2" 占用两行 layout_gravity="fill" 并填充 -->
+    <Button
+        android:text="button2"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        />
+    <Button
+        android:text="button3"
+        />
+    <Button
+        android:text="button4"
+        />
+
+    <Button
+        android:text="button1"
+        />
+    <Button
+        android:text="button2"
+        />
+    <Button
+        android:text="button3"
+        />
+    <Button
+        android:text="button4"
+        />
+</GridLayout>

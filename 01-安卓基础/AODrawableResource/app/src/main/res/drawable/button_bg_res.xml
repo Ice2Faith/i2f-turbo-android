@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置按钮按下时为绿色 -->
+    <item android:state_pressed="true" >
+        <shape>
+            <solid android:color="#00ff00"></solid>
+            <corners android:radius="20dp"></corners>
+            <size android:height="60dp"></size>
+        </shape>
+    </item>
+    <!-- 设置没有按下时有一个形状 -->
+    <item android:state_pressed="false" >
+        <!-- 定义形状为黄色的带圆角的高度为60的矩形 -->
+        <shape>
+            <solid android:color="#ff0000"></solid>
+            <corners android:radius="10dp"></corners>
+            <size android:height="60dp"></size>
+        </shape>
+    </item>
+</selector>

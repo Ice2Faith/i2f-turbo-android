@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugex.savelar.atactivity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CallSystemActivity"></activity>
+        <!--
+         注册了一个自己的Activity，
+            name标识类名，
+            lable标识显示标签，也就是标题栏
+            子标签意图过滤器（intent-filter）负责管理activity的启动方式
+                只有action符合才会被启动
+        -->
+        <activity
+            android:name=".MyActivity"
+            android:label="第二个Activity">
+            <intent-filter>
+                <action android:name="com.ugex.savelar.atactivity.MyActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+            <!--
+ name:指定Activity类，一般来说需要写完全的包含包名的
+                lable:指定要显示的文本，和标题差不多
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" /> <!-- 指定Action -->
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 指定启动类型，这LAUNCHER就是程序的启动项,DEFAULT就是一般的Activity -->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

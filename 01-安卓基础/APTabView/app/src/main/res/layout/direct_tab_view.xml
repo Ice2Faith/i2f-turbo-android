@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@+id/tabHostMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- TabHost中，必须要有一个ID为："@android:id/tabcontent" 的FrameLayout
+ 还有一个ID为："@android:id/tabs"的TabWidget
+ 但是常常为了布局显示能够正常，因此，需要嵌入一些布局，这里的布局就简单的做了一下-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9">
+
+                <TextView
+                    android:id="@+id/textViewDrtMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#0000ff"
+                    android:text="消息" />
+
+                <TextView
+                    android:id="@+id/textViewDrtCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#00ff00"
+                    android:text="联系" />
+
+                <TextView
+                    android:id="@+id/textViewDrtSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff0000"
+                    android:text="设置" />
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </TabHost>

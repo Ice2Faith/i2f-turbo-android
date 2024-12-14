@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="学生姓名"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextSsex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="学生性别"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonInsertStu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="插入学生"
+            android:onClick="OnInsertStudent"/>
+
+        <Button
+            android:id="@+id/buttonQueryStu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查询学生"
+            android:onClick="OnQueryStudent"/>
+
+        <EditText
+            android:id="@+id/editTextDelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="在这里输入要删除的名字"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonDelStu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除学生"
+            android:onClick="onDeleteStudent"/>
+
+
+        <ListView
+            android:id="@+id/listViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+        </ListView>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

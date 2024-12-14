@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="1"
+    android:toAlpha="0.1"
+    android:duration="3000"
+    >
+    <!-- 从完全不透明到基本透明，值区间[0-1]，持续3000毫秒 -->
+    <!-- 缩放：scale
+            fromXScale=""
+            toXScale=""
+            fromYScale=""
+            toYScale=""
+            值区间：[0-1],最小，最大（布局中原始大小）
+
+          移动：translate
+            fromXDelta=""
+            ...
+            值区间：按照尺寸给定即可，像素，原始位置认为是0
+        -->
+
+</alpha>

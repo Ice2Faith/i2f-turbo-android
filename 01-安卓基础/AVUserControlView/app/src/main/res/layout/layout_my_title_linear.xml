@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#ff0">
+    <!-- 实际使用中，参数不应该写死
+        因此在Values中添加一个文件attrs.xml
+        内容：
+            <resources>
+                <declare-styleable name="myTitleAttrs">
+                    <attr name="title" format="string"/>
+                </declare-styleable>
+            </resources>
+        使用时：
+            在布局文件中添加一个属性
+            xmlns:mytitle="http://schemas.android.com/apk/res/com.ugex.savelar.av.."
+            在使用的标签属性上：
+                mytitle:title="title"
+            也可以在代码中使用，具体查看MyTitleHandleLinearLayout中代码注释
+     -->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#00f"/>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:text="Title"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+</LinearLayout>

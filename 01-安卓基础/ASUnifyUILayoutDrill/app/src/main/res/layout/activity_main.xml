@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    android:id="@+id/MainTabHost"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/TabHostBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/TabHostFrameWeight">
+                <GridView
+                    android:id="@+id/FaceGuide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:numColumns="@integer/GuideFaceColumsCount"
+                    android:background="@drawable/GuideFaceBackground">
+
+                </GridView>
+
+
+                <ListView
+                    android:id="@+id/FaceMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/MsgFaceBackground">
+
+                </ListView>
+
+                <Gallery
+                    android:id="@+id/FaceImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/ImgFaceGallaryPadding"
+                    android:spacing="@dimen/ImgFaceGallerySpacing"
+                    android:background="@drawable/ImgFaceBackground">
+
+                </Gallery>
+                <ExpandableListView
+                    android:id="@+id/FaceSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/SetFaceBackground">
+
+                </ExpandableListView>
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="@integer/TabHostTabWidgetWeight"
+                android:background="@drawable/TabHostTabBarBackground"/>
+        </LinearLayout>
+    </TabHost>

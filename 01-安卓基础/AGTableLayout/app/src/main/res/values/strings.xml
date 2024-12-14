@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AGTableLayout</string>
+    <string name="CongraduateLoginSuccess">恭喜验证成功</string>
+    <string name="SlideToLogin">滑动进行验证</string>
+</resources>

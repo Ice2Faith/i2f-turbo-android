@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AFLinearCombineRelative</string>
+    <string name="LoginIn">登录</string>
+    <string name="Regest">注册</string>
+    <string name="username">账号</string>
+    <string name="userpwd">密码</string>
+    <string name="usernameinputtips">请输入用户名或手机号</string>
+    <string name="userpwdinputtips">请输入账号密码</string>
+    <string name="loginQuestion">登录遇到问题？</string>
+    <string name="otherLoginEntry">----其他登录方式----</string>
+    <string name="alipayLogin">支付宝</string>
+    <string name="wechatLogin">微信</string>
+</resources>

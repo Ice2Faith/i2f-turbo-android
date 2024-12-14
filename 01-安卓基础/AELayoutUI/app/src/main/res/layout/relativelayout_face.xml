@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    layout_centerInParent="true" 相对于父容器的中间
+     -->
+    <Button
+        android:id="@+id/btnrltv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="主按钮" />
+
+    <!-- layout_above="@+id/btnrltv" 相对于控件的上方 -->
+    <Button
+        android:id="@+id/btnrlsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnrltv"
+        android:layout_alignLeft="@+id/btnrltv"
+        android:layout_margin="10dp"
+        android:background="#ffeecc"
+        android:text="副按钮" />
+
+    <Button
+        android:id="@+id/btnrsr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btnrlsec"
+        android:layout_alignBottom="@+id/btnrlsec"
+        android:layout_margin="15dp"
+        android:background="#eeffaa"
+        android:text="副附按钮" />
+
+    <!--
+    layout_alignBaseline="@id/editText_url" 基线对其
+    padding="15dp" 内容和边框之间的距离 内部
+    layout_margin="10dp" 边框和边框之间的距离 外部
+    -->
+    <TextView
+        android:id="@+id/textView_srch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBaseline="@id/editText_url"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        android:text="搜索" />
+
+    <EditText
+        android:id="@+id/editText_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textView_srch"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Input URL" />
+</RelativeLayout>

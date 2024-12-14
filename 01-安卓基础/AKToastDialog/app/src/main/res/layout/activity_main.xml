@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/activity_main_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="118dp">
+
+        <Button
+            android:id="@+id/buttonSimpleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast简单文本"
+            android:onClick="ToastSimpleText"/>
+
+        <Button
+            android:id="@+id/buttonNewToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast构造创建"
+            android:onClick="ToastNewText"/>
+
+        <Button
+            android:id="@+id/buttonToastWithIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="带图标的Toast"
+            android:onClick="ToastWithIcon"/>
+
+        <Button
+            android:id="@+id/buttonSimpleDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简单对话框"
+            android:onClick="DiagSimple"/>
+
+        <Button
+            android:id="@+id/buttonBaseDlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="基本对话框"
+            android:onClick="DlagBase"/>
+
+        <Button
+            android:id="@+id/buttonListDlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表对话框"
+            android:onClick="DlagList"/>
+
+        <Button
+            android:id="@+id/buttonDlagSingleList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单选列表对话框"
+            android:onClick="DlagSingleList"/>
+
+        <Button
+            android:id="@+id/buttonMultiListDlag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="多选列表对话框"
+            android:onClick="DlagMultiList"/>
+
+        <Button
+            android:id="@+id/buttonDlgProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="进度条对话框"
+            android:onClick="DlagProgress"/>
+
+        <Button
+            android:id="@+id/buttonSelfDiaglog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义对话框"
+            android:onClick="DlagSelf"/>
+
+        <Button
+            android:id="@+id/buttonSelfDlagSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="自定义对话框二"
+            android:onClick="DlagSelfSec"/>
+
+        <Button
+            android:id="@+id/buttonPopWindow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹出窗口"
+            android:onClick="PopWindowShow"/>
+
+        <Button
+            android:id="@+id/buttonDatePickerDlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="日期选择对话框"
+            android:onClick="DlgDatePicker"/>
+
+        <Button
+            android:id="@+id/buttonTimePickerDlg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间选择对话框"
+            android:onClick="DlgTimePicker"/>
+
+        <Button
+            android:id="@+id/buttonNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="弹出系统通知"
+            android:onClick="NotifySystemInfoTest"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

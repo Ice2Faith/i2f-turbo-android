@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="GuideFaceColumsCount">4</integer>
+    <integer name="TabHostFrameWeight">9</integer>
+    <integer name="TabHostTabWidgetWeight">1</integer>
+    <integer name="TabWidgetBarItemImgWeight">3</integer>
+    <integer name="TabWidgetBarItemTextWeight">1</integer>
+    <integer name="GuideFaceGrideItemImgWeight">4</integer>
+    <integer name="GuideFaceGrideItemTextWeight">1</integer>
+    <integer name="SetFaceExpandLSVGroupImgWeight">1</integer>
+    <integer name="SetFaceExpandLSVGroupTextWeight">4</integer>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTitleBg">#ff0000</color>
+    <color name="colorTitleFont">#ffffff</color>
+    <color name="transparent">#0000</color>
+    <color name="underline_color">#000</color>
+    <color name="question_color">#2244ff</color>
+    <color name="login_color_btn">#ffaa44</color>
+</resources>

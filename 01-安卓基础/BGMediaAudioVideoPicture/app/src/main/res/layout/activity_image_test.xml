@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Image.ImageTestActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonUseSystemCameraPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用系统相机拍照"
+            android:onClick="onBtnUseSystemCameraClicked"/>
+        <Button
+            android:id="@+id/buttonUseSelfCameraPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="使用自定义相机拍照"
+            android:onClick="onBtnUseSelfCameraClicked"/>
+
+        <ImageView
+            android:id="@+id/imageViewPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_launcher_foreground" />
+
+        <ImageView
+            android:id="@+id/imageViewNinePatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/iconpatch" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="login_page_head_img_weight">2</integer>
+    <integer name="login_page_other_line_weight">1</integer>
+    <integer name="login_page_space_holder_weight">5</integer>
+    <integer name="login_page_tel_weight">3</integer>
+    <integer name="login_page_tel_menu_weight">1</integer>
+    <integer name="login_page_tel_send_code_weight">2</integer>
+    <integer name="updateinfo_page_head_img_weight">3</integer>
+    <integer name="updateinfo_page_other_line_weight">1</integer>
+    <integer name="hello_page_ball_count">8</integer>
+    <integer name="login_page_ball_count">3</integer>
+    <integer name="login_page_ball_radius">60</integer>
+    <integer name="login_page_ball_level">15</integer>
+    <integer name="main_page_ball_count">120</integer>
+</resources>

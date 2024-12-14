@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImgFaceGallaryPadding">5dp</dimen>
+    <dimen name="ImgFaceGallerySpacing">15dp</dimen>
+    <dimen name="SetFaceGroupImgLeftMargin">40dp</dimen>
+    <dimen name="SetFaceGroupImgRightMargin">18dp</dimen>
+    <dimen name="SetFaceChildenItemLeftMargin">60dp</dimen>
+    <dimen name="SetFaceChilenItemFontSize">24dp</dimen>
+    <dimen name="TabHostTabBarFontSize">24dp</dimen>
+    <dimen name="GuideFaceGrideItemFontSize">18dp</dimen>
+    <dimen name="GuideFaceGrideItemPadding">5dp</dimen>
+    <dimen name="MsgFaceListItemSmallTextFontSize">16dp</dimen>
+    <dimen name="MsgFaceImgLeftMargin">15dp</dimen>
+    <dimen name="MsgFaceImgRightMargin">20dp</dimen>
+
+</resources>

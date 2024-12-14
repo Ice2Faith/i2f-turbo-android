@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextFSContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="在这里输入内容写入或读出内容显示"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/buttonFSWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FileSystemWriteContent"
+            android:text="文件系统写出" />
+
+        <Button
+            android:id="@+id/buttonFSRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FileSystemReadContent"
+            android:text="文件系统读入" />
+
+        <Button
+            android:id="@+id/buttonRawRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ResourceRawReadContent"
+            android:text="资源文件raw读入" />
+
+        <Button
+            android:id="@+id/buttonSDWrite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="SdCardWriteContent"
+            android:text="SD卡写出" />
+
+        <Button
+            android:id="@+id/buttonSDRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="SdCardReadContent"
+            android:text="SD卡读入" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

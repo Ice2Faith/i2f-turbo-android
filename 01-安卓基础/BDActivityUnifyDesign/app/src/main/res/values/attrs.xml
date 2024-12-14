@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RainView">
+        <attr name="bounce_level" format="integer"/>
+        <attr name="ball_radius" format="integer"/>
+        <attr name="ball_count" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AnimatePaintView">
+        <attr name="ani_ball_count" format="integer"/>
+    </declare-styleable>
+</resources>

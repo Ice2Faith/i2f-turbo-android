@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AELayoutUI</string>
+    <string name="hor">水平</string>
+    <string name="vel">垂直</string>
+
+    <string name="align_top">Top</string>
+    <string name="align_buttom">Buttom</string>
+    <string name="align_left">Left</string>
+    <string name="align_right">Right</string>
+    <string name="align_center">Center</string>
+</resources>
