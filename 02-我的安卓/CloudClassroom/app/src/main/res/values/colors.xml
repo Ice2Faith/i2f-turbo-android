@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="page_title">#66eeff</color>
+    <color name="clickable_text">#0099ee</color>
+    <color name="choice_color">#22aaff</color>
+    <color name="modify_color">#22eeee</color>
+    <color name="add_color">#22ee55</color>
+    <color name="delete_color">#ee2255</color>
+    <color name="submit_color">#ffbb22</color>
+    <color name="ads_jump_background">#16000000</color>
+</resources>

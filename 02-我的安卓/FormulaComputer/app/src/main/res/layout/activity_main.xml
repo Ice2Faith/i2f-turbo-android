@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edtInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/uni_edttext"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+
+                <EditText
+                    android:id="@+id/edtOutput"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uni_edttext"
+                    android:layout_margin="5dp"
+                    android:gravity="left|top"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Spinner
+                            android:id="@+id/spnSrcHex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1" />
+
+                        <Spinner
+                            android:id="@+id/spnDstHex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <EditText
+                            android:id="@+id/edtSrcHexNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:background="@drawable/uni_edttext"
+                            android:hint="源进制数" />
+
+                        <EditText
+                            android:id="@+id/edtDstHexNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1"
+                            android:inputType="text"
+                            android:background="@drawable/uni_edttext"
+                            android:hint="目标进制数" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnQuateLeft"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="(" />
+
+                        <Button
+                            android:id="@+id/btnInQuate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5px"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="(...)" />
+
+                        <Button
+                            android:id="@+id/btnQuateRight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text=")" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnSqrt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="sqrt" />
+
+                        <Button
+                            android:id="@+id/btnLog"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="log" />
+
+                        <Button
+                            android:id="@+id/btnAdds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="+...+" />
+
+                        <Button
+                            android:id="@+id/btnMuls"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="*...*" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnRecip"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="1/n" />
+
+                        <Button
+                            android:id="@+id/btnEpowX"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="e^x" />
+
+                        <Button
+                            android:id="@+id/btnLn"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="ln" />
+
+                        <Button
+                            android:id="@+id/btnnGoldSec"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="黄金分割率" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnDehex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="dehex" />
+
+                        <Button
+                            android:id="@+id/btnClear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="clear" />
+
+                        <Button
+                            android:id="@+id/btnBack"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="&lt;&lt;" />
+
+                        <Button
+                            android:id="@+id/btnAdd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="+" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNum7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="7" />
+
+                        <Button
+                            android:id="@+id/btnNum8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="8" />
+
+                        <Button
+                            android:id="@+id/btnNum9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="9" />
+
+                        <Button
+                            android:id="@+id/btnSub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="-" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNum4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="4" />
+
+                        <Button
+                            android:id="@+id/btnNum5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="5" />
+
+                        <Button
+                            android:id="@+id/btnNum6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="6" />
+
+                        <Button
+                            android:id="@+id/btnMul"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="*" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNum1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="1" />
+
+                        <Button
+                            android:id="@+id/btnNum2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="2" />
+
+                        <Button
+                            android:id="@+id/btnNum3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="3" />
+
+                        <Button
+                            android:id="@+id/btnDiv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="/" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNum0"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="0" />
+
+                        <Button
+                            android:id="@+id/btnDot"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="." />
+
+                        <Button
+                            android:id="@+id/btnMod"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="mod" />
+
+                        <Button
+                            android:id="@+id/btnEqual"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="=" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNumA"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="A" />
+
+                        <Button
+                            android:id="@+id/btnNumB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="B" />
+
+                        <Button
+                            android:id="@+id/btnNumC"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="C" />
+
+                        <Button
+                            android:id="@+id/btnPow"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="^" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnNumD"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="D" />
+
+                        <Button
+                            android:id="@+id/btnNumE"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="E" />
+
+                        <Button
+                            android:id="@+id/btnNumF"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="F" />
+
+                        <Button
+                            android:id="@+id/btnNeg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="负号" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnPercent"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="%" />
+
+                        <Button
+                            android:id="@+id/btnFactorial"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="!" />
+
+                        <Button
+                            android:id="@+id/btnAbs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="abs" />
+
+                        <Button
+                            android:id="@+id/btnAngle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="angle" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnAnd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="and" />
+
+                        <Button
+                            android:id="@+id/btnOr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="or" />
+
+                        <Button
+                            android:id="@+id/btnXor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="xor" />
+
+                        <Button
+                            android:id="@+id/btnRadian"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="radian" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnSin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="sin" />
+
+                        <Button
+                            android:id="@+id/btnCos"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="cos" />
+
+                        <Button
+                            android:id="@+id/btnTan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="tan" />
+
+                        <Button
+                            android:id="@+id/btnnPi"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="π" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnArcSin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="arcsin" />
+
+                        <Button
+                            android:id="@+id/btnArcCos"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="arccos" />
+
+                        <Button
+                            android:id="@+id/btnArcTan"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="arctan" />
+
+                        <Button
+                            android:id="@+id/btnnE"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="e" />
+                    </TableRow>
+
+                    <!-- adds -->
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnLMov"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="lmov" />
+
+                        <Button
+                            android:id="@+id/btnRMov"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="rmov" />
+
+                        <Button
+                            android:id="@+id/btnNot"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="not" />
+
+                        <Button
+                            android:id="@+id/btnnMinSum"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="minsum" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnMax"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="max" />
+
+                        <Button
+                            android:id="@+id/btnMin"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="min" />
+
+                        <Button
+                            android:id="@+id/btnAvg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="avg" />
+
+                        <Button
+                            android:id="@+id/btnMaxFac"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="maxfac" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnRecipAdds"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="recipadds" />
+
+                        <Button
+                            android:id="@+id/btnRecipMuls"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="recipmuls" />
+
+                        <Button
+                            android:id="@+id/btnPerAdd"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="peradd" />
+
+                        <Button
+                            android:id="@+id/btnnPerSub"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="persub" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnRand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="rand" />
+
+                        <Button
+                            android:id="@+id/btnRandZ"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="randz" />
+
+                        <Button
+                            android:id="@+id/btnRandF"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="randf" />
+
+                        <Button
+                            android:id="@+id/btnDayOfMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="dayofmonth" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnCeil"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="ceil" />
+
+                        <Button
+                            android:id="@+id/btnFloor"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="floor" />
+
+                        <Button
+                            android:id="@+id/btnRound"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="round" />
+
+                        <Button
+                            android:id="@+id/btnnDayOfYear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="dayofyear" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnDHead"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="dhead" />
+
+                        <Button
+                            android:id="@+id/btnFTail"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="ftail" />
+
+                        <Button
+                            android:id="@+id/btnKmhToMs"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="kmh2ms" />
+
+                        <Button
+                            android:id="@+id/btnnMsToKmh"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="ms2kmh" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:id="@+id/btnCtToFt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="c2f" />
+
+                        <Button
+                            android:id="@+id/btnFtToCt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="f2c" />
+
+                        <Button
+                            android:id="@+id/btnXPowX"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="x^x" />
+
+                        <Button
+                            android:id="@+id/btnFeibo"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/uni_button"
+                            android:text="feibo" />
+                    </TableRow>
+                </TableLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

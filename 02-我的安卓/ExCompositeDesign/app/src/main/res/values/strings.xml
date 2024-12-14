@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">ExCompositeDesign</string>
+
+    <string name="tab_bar_guide">主页</string>
+    <string name="tab_bar_msg">消息</string>
+    <string name="tab_bar_img">相册</string>
+    <string name="tab_bar_set">设置</string>
+
+    <string name="unlogin_success">注销成功</string>
+
+    <string name="logininfo_sharedprefe_name">logininfo</string>
+
+    <string name="login_page_edt_tel_hint">输入手机号</string>
+
+    <string name="login_page_tv_send_code_text">获取验证码</string>
+
+    <string name="login_page_edt_check_code_hint">输入验证码</string>
+
+    <string name="login_page_btn_login_text">登录</string>
+
+    <string name="login_page_tv_account_login_text">账户密码登录</string>
+
+    <string name="updateinfo_page_edt_user_name_hint">用户名</string>
+
+    <string name="updateinfo_page_tv_sex_tip_text">性别：</string>
+    <string name="updateinfo_page_rdobtn_sex_man_text">男</string>
+
+    <string name="updateinfo_page_rdobtn_sex_woman_text">女</string>
+    <string name="updateinfo_page_rdobtn_sex_secret_text">保密</string>
+    <string name="updateinfo_page_edt_user_address_hint">详细通讯地址</string>
+    <string name="updateinfo_page_edt_user_account_hint">登录账号</string>
+    <string name="updateinfo_page_edt_user_brith_hint">出生日期</string>
+    <string name="updateinfo_page_edt_user_email_hint">Email</string>
+    <string name="updateinfo_page_btn_modify_text">修改</string>
+    <string name="updateinfo_page_btn_delete_text">删除</string>
+    <string name="toast_please_input_user_name">请输入用户名（必填）</string>
+    <string name="toast_lease_input_tel_number">请输入手机号</string>
+    <string name="login_page_tv_send_code_wait_time_resend">秒后可重发</string>
+    <string name="toast_check_code_not_compared_or_not_input">验证码不一致，请检查拼写错误或输入！！</string>
+    <string name="hello_page_tv_wait_enter_time_start">秒后进入</string>
+    <string name="auto_login_next">自动登录</string>
+    <string name="telephone_login">手机验证登录</string>
+    <string name="please_input_accout">请输入账号</string>
+
+    <string name="reg_page_reg_btn_text">注册</string>
+    <string name="reg_page_please_repeat_input_password">请重复输入密码</string>
+    <string name="toast_tel_or_pass_length_must_gather_than_zero">电话或密码长度必须大于0</string>
+    <string name="toast_both_password_not_matched">两次密码不一致</string>
+    <string name="toast_this_accout_had_been_registered_please_to_login">账号已经被注册，请前往登录</string>
+    <string name="toast_please_check_account_or_password_correct">请检查账户或者密码是否正确</string>
+    <string name="toast_password_of_this_account_is_not_matched">密码错误，请重试</string>
+
+    <string name="tv_to_login">去登录</string>
+    <string name="tv_to_register">去注册</string>
+
+    <string name="please_input_password">请输入密码</string>
+    <string name="toast_please_input_account_and_password">请输入账号和密码</string>
+    <string-array name="user_names">
+        <item>小狄</item>
+        <item>薇安</item>
+        <item>良生</item>
+        <item>半藏</item>
+        <item>敦敦</item>
+    </string-array>
+    <string-array name="user_msgs">
+        <item>叮叮叮</item>
+        <item>在吗</item>
+        <item>出去玩啊</item>
+        <item>游？</item>
+        <item>当前已离线</item>
+    </string-array>
+    <string-array name="setting_items">
+        <item>网络</item>
+        <item>账号</item>
+        <item>显示</item>
+        <item>关于</item>
+        <item>设置</item>
+    </string-array>
+
+    <string-array name="set_net">
+        <item>移动网络</item>
+        <item>WLAN</item>
+        <item>蓝牙</item>
+    </string-array>
+    <string-array name="set_account">
+        <item>我的</item>
+        <item>信息修改</item>
+    </string-array>
+    <string-array name="set_display">
+        <item>风格</item>
+        <item>颜色</item>
+    </string-array>
+    <string-array name="set_about">
+        <item>支持</item>
+        <item>联系我们</item>
+    </string-array>
+    <string-array name="set_set">
+        <item>注销</item>
+    </string-array>
+</resources>

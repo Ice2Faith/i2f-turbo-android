@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.classroom">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Student.StudentViewClassAccessActivity"/>
+        <activity android:name=".Student.StudentViewHomeworkActivity"/>
+        <activity android:name=".Teacher.TeacherManageClassAccessActivity"/>
+        <activity android:name=".Teacher.TeacherManageHomeworkActivity"/>
+        <activity android:name=".Admin.AdminPrivateInfoActivity"/>
+        <activity android:name=".Teacher.TeacherPrivateInfoActivity"/>
+        <activity android:name=".Teacher.TeacherManageAttendanceActivity" />
+        <activity android:name=".Student.StudentViewAttendenceActivity" />
+        <activity android:name=".Student.StudentPrivateInfoActivity" />
+        <activity android:name=".Admin.AdminMainActivity" />
+        <activity android:name=".Teacher.TeacherMainActivity" />
+        <activity android:name=".Student.StudentMainActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".DAO.ClassroomDbProvider"
+            android:authorities="com.demo.classroom.provider.classroomdbprovider"
+            android:exported="true" />
+    </application>
+
+</manifest>

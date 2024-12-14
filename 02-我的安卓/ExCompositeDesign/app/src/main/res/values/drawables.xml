@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="GuideFaceBackground">#fff</drawable>
+    <drawable name="MsgFaceBackground">#fff</drawable>
+    <drawable name="ImgFaceBackground">#fff</drawable>
+    <drawable name="SetFaceBackground">#fff</drawable>
+    <drawable name="TabHostBackground">#fff</drawable>
+    <drawable name="TabHostTabBarBackground">#fff</drawable>
+
+    <drawable name="TabWeigetItemGuideImg">@drawable/guide</drawable>
+    <drawable name="TabWeigetItemMsgImg">@drawable/msg</drawable>
+    <drawable name="TabWeigetItemImgImg">@drawable/img</drawable>
+    <drawable name="TabWeigetItemSetImg">@drawable/set</drawable>
+
+</resources>

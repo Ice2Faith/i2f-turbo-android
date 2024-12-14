@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.AdmClassChargeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/class_code" />
+
+            <EditText
+                android:id="@+id/editTextClassNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="number"
+                android:hint="@string/class_code"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/class_name" />
+
+            <EditText
+                android:id="@+id/editTextClassName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:hint="@string/class_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonAddorModifyClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/modify_color"
+                android:onClick="OnClickedAddOrModifyClassButton"
+                android:text="@string/add_or_modify" />
+
+            <Button
+                android:id="@+id/buttonDelClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/delete_color"
+                android:text="@string/delete"
+                android:onClick="OnClickedDelClassButton"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewClasses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

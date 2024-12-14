@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.AdmMainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/page_padding">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.ugex.savelar.cloudclassroom.Tools.AnimatePaintView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/login_logo_height" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/login_logo_height"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/cloudclassroomhor" />
+            </FrameLayout>
+
+            <GridView
+                android:id="@+id/grideViewMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/block_margin"
+                android:numColumns="@integer/main_page_gridview_cols_count" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HexTransfer</string>
+    <string name="SrcHex">源进制</string>
+    <string name="DrtHex">目标进制</string>
+    <string name="Back">Back</string>
+    <string name="AC">AC</string>
+    <string name="BaseInput">请输入</string>
+    <string name="BaseOutput">结果为</string>
+    <string name="strTobase">转换为Base64</string>
+    <string name="baseTostr">转换为字符串</string>
+    <string name="baseInputTips">在此处输入字符串或base64串</string>
+    <string name="baseOutputTips">结果可在此处复制！</string>
+</resources>

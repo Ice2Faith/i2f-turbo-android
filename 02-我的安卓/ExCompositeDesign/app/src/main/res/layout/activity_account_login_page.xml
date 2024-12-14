@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AccountLoginPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ugex.savelar.excompositedesign.Controls.AnimatePaintView
+            android:id="@+id/rainView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="@integer/login_page_head_img_weight"
+            app:ani_ball_count="@integer/login_page_ball_count"/>
+
+        <EditText
+            android:id="@+id/editTextAccount"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:ems="10"
+            android:hint="@string/please_input_accout"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:ems="10"
+            android:hint="@string/please_input_password"
+            android:inputType="textPersonName|textWebPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxAutoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/auto_login_next" />
+
+            <TextView
+                android:id="@+id/textViewTelLoginType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/login_page_tvaccountlogin_padding_right"
+                android:text="@string/telephone_login" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:background="@drawable/draw_my_button"
+            android:text="@string/login_page_btn_login_text"
+            android:onClick="onBtnAccountLoginClicked"/>
+
+        <View
+            android:id="@+id/viewSpaceHolder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_space_holder_weight">
+
+        </View>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

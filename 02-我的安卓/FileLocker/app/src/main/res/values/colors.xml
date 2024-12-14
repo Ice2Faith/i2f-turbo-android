@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4FECDC</color>
+    <color name="colorPrimaryDark">#335C56</color>
+    <color name="colorAccent">#F56A9E</color>
+    <color name="colorOpeBack">#22ff55</color>
+    <color name="colorCleanLogBack">#22aacc</color>
+    <color name="colorRunLogText">#ff2233</color>
+</resources>

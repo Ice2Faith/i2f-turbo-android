@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="手机号"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="请输入电话号码"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewSendCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="发送验证码"
+                android:textColor="#2255ff"
+                android:textStyle="italic|bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="密码"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/editTextPwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="确认密码"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/editTextCorrectPwd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:ems="10"
+                android:hint="请输入验证密码"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="验证码"
+            android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/editTextCheckCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:hint="请输入验证码"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="类型"
+                android:gravity="center_vertical"/>
+            <RadioGroup
+                android:id="@+id/radioGroupType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonStudent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="学生"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonTeacher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="教师" />
+                <!--
+                <RadioButton
+                    android:id="@+id/radioButtonAdmin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="管理员" />
+                   -->
+            </RadioGroup>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnClickedRegister"
+            android:text="注册"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#0f0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="去登录"
+            android:onClick="OnClickedGoLogin"
+            android:layout_marginTop="25dp"
+            android:textColor="#2255ff"
+            android:textStyle="italic|bold"
+            android:layout_gravity="right"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.TelLoginPageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.ugex.savelar.excompositedesign.Controls.AnimatePaintView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_head_img_weight"
+            android:layout_gravity="center"
+            app:ani_ball_count="@integer/login_page_ball_count"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextTelNumber"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/login_page_tel_weight"
+                android:ems="10"
+                android:hint="@string/login_page_edt_tel_hint"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageViewTelMenu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/login_page_tel_menu_weight"
+                app:srcCompat="@drawable/bgimg" />
+
+            <TextView
+                android:id="@+id/textViewSendCheckCode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/login_page_tel_send_code_weight"
+                android:gravity="center"
+                android:text="@string/login_page_tv_send_code_text" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextCheckCode"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:ems="10"
+            android:hint="@string/login_page_edt_check_code_hint"
+
+            android:inputType="textPersonName" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxAutoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/auto_login_next" />
+
+            <TextView
+                android:id="@+id/textViewAccountLoginType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="@dimen/login_page_tvaccountlogin_padding_right"
+                android:text="@string/login_page_tv_account_login_text" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_other_line_weight"
+            android:layout_gravity="center"
+            android:background="@drawable/draw_my_button"
+            android:text="@string/login_page_btn_login_text"
+            android:onClick="onBtnLoginCliked" />
+        <Chronometer
+            android:id="@+id/chronometerWaitTimer"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"/>
+        <FrameLayout
+            android:id="@+id/viewSpaceHolder"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="@integer/login_page_space_holder_weight">
+
+            <TextView
+                android:id="@+id/textViewToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:onClick="onTvToRegisterClicked"
+                android:text="@string/tv_to_register" />
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

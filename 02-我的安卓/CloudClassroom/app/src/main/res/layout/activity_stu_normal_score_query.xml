@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivities.StuNormalScoreQueryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_title_text_size"
+            android:gravity="center"
+            android:textColor="@color/page_title"
+            android:layout_marginBottom="@dimen/page_title_margin_bottom"
+            android:text="@string/student_normal_score_query" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/person_name" />
+
+            <TextView
+                android:id="@+id/textViewSelectSname"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:text="@string/person_name"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/student_no" />
+
+            <TextView
+                android:id="@+id/textViewSelectSno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/final_sum_score" />
+
+            <TextView
+                android:id="@+id/textViewSumScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/final_avg_score" />
+
+            <TextView
+                android:id="@+id/textViewAvgScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/homework_sum_score" />
+
+            <TextView
+                android:id="@+id/textViewSumHomeworkScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/homework_avg_score" />
+
+            <TextView
+                android:id="@+id/textViewAvgHomeworkScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/access_sum_score" />
+
+            <TextView
+                android:id="@+id/textViewSumAccessScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/access_avg_score" />
+
+            <TextView
+                android:id="@+id/textViewAvgAccessScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/final_max_score" />
+
+            <TextView
+                android:id="@+id/textViewMaxScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/final_min_score" />
+
+            <TextView
+                android:id="@+id/textViewMinScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/homework_max_score" />
+
+            <TextView
+                android:id="@+id/textViewMaxHomeworkScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/homework_min_score" />
+
+            <TextView
+                android:id="@+id/textViewMinHomeworkScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/access_max_score" />
+
+            <TextView
+                android:id="@+id/textViewMaxAccessScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/access_min_score" />
+
+            <TextView
+                android:id="@+id/textViewMinAccessScore"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/score_result_by_teacher_accesses" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

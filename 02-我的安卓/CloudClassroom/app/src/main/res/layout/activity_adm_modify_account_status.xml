@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivities.AdmModifyAccountStatusActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/type" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupType"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonStudent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/student" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTeacher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/teacher" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonAdmin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/admin" />
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDetail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/selected" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewName"
+                        style="@style/TextAppearance.AppCompat.Large"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/person_name" />
+
+                    <TextView
+                        android:id="@+id/textViewToDetail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/view_person_info"
+                        android:textColor="@color/clickable_text"
+                        android:textStyle="italic|bold"
+                        android:onClick="OnClickedToDetailTextView"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/student_no_or_teacher_no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewAccount"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:text="@string/account" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxStatus"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/is_useful" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewPersones"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

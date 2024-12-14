@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ugex.savelar.cloudclassroom">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StudentActivities.StuNormalScoreQueryActivity"></activity>
+        <activity android:name=".pubActivities.SelectOrViewPerformActivity" />
+        <activity android:name=".TeacherActivities.TchPerformManageActivity" />
+        <activity android:name=".pubActivities.SelectOrViewHomeworkActivity" />
+        <activity android:name=".TeacherActivities.TchHomeworkManageActivity" />
+        <activity android:name=".pubActivities.SelectOrViewClassAccessActivity" />
+        <activity android:name=".TeacherActivities.TchClassAccessManageActivity" />
+        <activity android:name=".AdminActivities.AdmClassChargeActivity" />
+        <activity android:name=".AdminActivities.AdmModifyAccountStatusActivity" />
+        <activity android:name=".TeacherActivities.TchModifyDetailInfoActivity" />
+        <activity android:name=".StudentActivities.StuModifyDetialInfoActivity" />
+        <activity android:name=".pubActivities.ModifyPubSelfInfoActivity" />
+        <activity android:name=".TeacherActivities.TchMainActivity" />
+        <activity android:name=".StudentActivities.StuMainActivity" />
+        <activity android:name=".AdminActivities.AdmMainActivity" />
+        <activity android:name=".pubActivities.RegisterActivity" />
+        <activity android:name=".pubActivities.LoginActivity" />
+        <activity android:name=".pubActivities.FirstAdsActivity" />
+        <activity android:name=".pubActivities.FirstBrandActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".DAO.CloudClassroomDbProvider"
+            android:authorities="ugex.provider.cloudclassroom"
+            android:exported="true" />
+        <service android:name=".pubActivities.DownloadAdsService"
+            android:enabled="true"/>
+    </application>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="263dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spnDir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+
+            <EditText
+                android:id="@+id/edtDir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnEnterDir"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffaa00"
+                android:onClick="onBtnEnterDirClicked"
+                android:text="进入" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtSelectPath"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnWinSafe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffaa"
+                android:onClick="onBtnWinSafeClicked"
+                android:text="安全" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lstFiles"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

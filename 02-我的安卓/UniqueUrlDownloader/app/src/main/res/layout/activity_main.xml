@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="209dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:hint="输入URL"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="添加"
+                android:onClick="btnAddUrlClick"
+                android:background="#f50"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAddFromClipboard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#05f"
+                android:onClick="btnAddUrlFromClipboardClick"
+                android:text="从剪切板添加" />
+
+            <Button
+                android:id="@+id/btnBatchAddLines"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#5fa"
+                android:onClick="onBtnBatchAddLinesClicked"
+                android:text="剪切板批量行" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="下载文件名"
+                android:inputType="text" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="btnDownloadListClick"
+                android:text="下载列表"
+                android:background="#0f5"/>
+
+            <Button
+                android:id="@+id/btnDownloadByMediaId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="OnBtnDownloadByMediaIdClicked"
+                android:text="分轨下载"
+                android:background="#f05"/>
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:onClick="btnClearListClick"
+                android:text="清空列表"
+                android:background="#eee"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lsvUrlList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

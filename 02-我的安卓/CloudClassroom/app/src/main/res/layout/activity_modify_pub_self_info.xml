@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pubActivities.ModifyPubSelfInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+
+
+        <ImageView
+            android:id="@+id/imageViewPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/person_photo_height"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/cloudclassroomhor"
+            android:onClick="OnClickedPhotoImageView"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <TextView
+                android:id="@+id/textViewAccount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/account" />
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/account"
+                android:enabled="false"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/pwd" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPassword"
+                android:hint="@string/pwd" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewRepeatPassword"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/repeat_pwd" />
+
+            <EditText
+                android:id="@+id/editTextRepeatPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:hint="@string/repeat_pwd" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/person_name" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/person_name" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewSex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/sex" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupSex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonMan"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/man" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonWoman"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/woman" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSecret"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/secret" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewBrith"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/brith" />
+
+            <TextView
+                android:id="@+id/editTextSelectBrith"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/clickable_text"
+                android:textStyle="italic|bold"
+                android:text="@string/click_to_select_time"
+                android:onClick="OnClickedSelectBrithTextView"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewAddress"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/address" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="@integer/hor_weight_right"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerProvince"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+                <Spinner
+                    android:id="@+id/spinnerArea"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextDetailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/detail_address"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/email" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewIntroduce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/brief_introduce" />
+
+            <EditText
+                android:id="@+id/editTextIntroduce"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/brief_introduce" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/block_margin">
+
+            <Button
+                android:id="@+id/buttonModifyInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/modify_color"
+                android:onClick="OnClickedModifyInfoButton"
+                android:text="@string/modify" />
+            <TextView
+                android:id="@+id/textViewToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:text="@string/logout"
+                android:textColor="@color/clickable_text"
+                android:textStyle="italic|bold"
+                android:onClick="OnClickedLogoutTextView"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/to_modify_only_you_want" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

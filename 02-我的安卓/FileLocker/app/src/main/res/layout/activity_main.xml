@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_ope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Operate"
+        android:background="@color/colorOpeBack"
+        app:layout_constraintBottom_toTopOf="@+id/textView_log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_pwd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pwd" />
+
+    <Button
+        android:id="@+id/button_cleanlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CleanLog"
+        android:background="@color/colorCleanLogBack"
+        app:layout_constraintBottom_toTopOf="@+id/textView_log"
+        app:layout_constraintEnd_toEndOf="@+id/editText_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/editText_pwd" />
+
+    <CheckBox
+        android:id="@+id/checkBox_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OpedirText"
+        app:layout_constraintBottom_toTopOf="@+id/editText_srcpath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_drtpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="/sdcard/"
+        app:layout_constraintBottom_toTopOf="@+id/radioButton_lock"
+        app:layout_constraintEnd_toEndOf="@+id/radioButton_unlock"
+        app:layout_constraintTop_toBottomOf="@+id/editText_srcpath" />
+
+    <EditText
+        android:id="@+id/editText_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:hint="@string/KeyTips"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button_ope"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButton_lock" />
+
+    <EditText
+        android:id="@+id/editText_srcpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="/sdcard/"
+        app:layout_constraintBottom_toTopOf="@+id/editText_drtpath"
+        app:layout_constraintEnd_toEndOf="@+id/editText_drtpath"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_dir" />
+
+    <RadioButton
+        android:id="@+id/radioButton_unlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Unlock"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pwd"
+        app:layout_constraintEnd_toEndOf="@+id/editText_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/editText_drtpath"
+        app:layout_constraintVertical_bias="0.598" />
+
+    <RadioButton
+        android:id="@+id/radioButton_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Lock"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pwd"
+        app:layout_constraintStart_toEndOf="@+id/textView_opemode"
+        app:layout_constraintStart_toStartOf="@+id/editText_pwd"
+        app:layout_constraintTop_toBottomOf="@+id/editText_drtpath" />
+
+    <TextView
+        android:id="@+id/textView_drtpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DrtFile"
+        app:layout_constraintBottom_toTopOf="@+id/textView_opemode"
+        app:layout_constraintStart_toStartOf="@+id/textView_srcpath"
+        app:layout_constraintTop_toBottomOf="@+id/textView_srcpath" />
+
+    <TextView
+        android:id="@+id/textView_opemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Mode"
+        app:layout_constraintBottom_toTopOf="@+id/textView_pwd"
+        app:layout_constraintStart_toStartOf="@+id/textView_drtpath"
+        app:layout_constraintTop_toBottomOf="@+id/textView_drtpath" />
+
+    <TextView
+        android:id="@+id/textView_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DefaultLog"
+        android:textColor="@color/colorRunLogText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_ope" />
+
+    <TextView
+        android:id="@+id/textView_srcpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SrcFile"
+        app:layout_constraintBottom_toTopOf="@+id/textView_drtpath"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editText_srcpath"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_dir" />
+
+    <TextView
+        android:id="@+id/textView_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Key"
+        app:layout_constraintBottom_toTopOf="@+id/button_ope"
+        app:layout_constraintStart_toStartOf="@+id/textView_opemode"
+        app:layout_constraintTop_toBottomOf="@+id/textView_opemode" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textViewLeftMargin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textViewNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textViewOpe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="+" />
+
+    <TextView
+        android:id="@+id/textViewNum2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1" />
+
+    <TextView
+        android:id="@+id/textViewEqu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="=" />
+
+    <EditText
+        android:id="@+id/editTextInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:ems="10"
+        android:hint="答题处"
+        android:inputType="numberSigned|number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="答案" />
+
+    <TextView
+        android:id="@+id/textViewRightMargin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

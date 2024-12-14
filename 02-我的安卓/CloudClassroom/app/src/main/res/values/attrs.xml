@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatePaintView">
+        <attr name="ani_ball_count" format="integer"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ugex.savelar.scrolltext.Controls.ScrollTextView
+            android:id="@+id/scrollTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:id="@+id/linearLayoutSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:background="#4fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="显示内容：" />
+
+                <EditText
+                    android:id="@+id/editTextDisplayText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="在这里输入要显示的内容"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="页面显示文字个数：" />
+
+                <EditText
+                    android:id="@+id/editTextLineTextLength"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="越小文字越大"
+                    android:inputType="number"
+                    android:text="12" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="滚动速度：" />
+
+                <EditText
+                    android:id="@+id/editTextScrollSpeed"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="越大滚动越快"
+                    android:inputType="number"
+                    android:text="6" />
+            </LinearLayout>
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="刷新毫秒间隔：" />
+            <EditText
+                android:id="@+id/editTextRefreshMillTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="number"
+                android:text="30"
+                android:hint="越小刷新率越高，滚动越快"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="字体描边宽度：" />
+
+                <EditText
+                    android:id="@+id/editTextTextStrockWidth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:hint="越大字越粗"
+                    android:inputType="numberDecimal"
+                    android:text="0" />
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="字体颜色：" />
+            <EditText
+                android:id="@+id/editTextTextColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="text"
+                android:text="#ff000000"
+                android:hint="#AARRGGBB"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="背景颜色：" />
+
+            <EditText
+                android:id="@+id/editTextBackColor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="#AARRGGBB"
+                android:inputType="text"
+                android:text="#ffffffff" />
+        </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBoxOpentoVoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="语音播报" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:background="#4fff"
+            android:layout_gravity="right|top"
+            android:onClick="onBtnSettingClicked"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

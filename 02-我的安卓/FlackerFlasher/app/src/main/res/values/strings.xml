@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FlackerFlasher</string>
+    <string name="FlackerSleep">震动间隔</string>
+    <string name="FlasherSleep">闪光间隔</string>
+    <string name="valUp">Up</string>
+    <string name="valDown">Down</string>
+    <string name="openFlash">闪光</string>
+    <string name="openFlack">震动</string>
+    <string name="run">开始</string>
+    <string name="stop">停止</string>
+</resources>

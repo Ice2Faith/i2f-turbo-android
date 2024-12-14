@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TeacherActivities.TchClassAccessManageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/page_title_text_size"
+            android:gravity="center"
+            android:textColor="@color/page_title"
+            android:layout_marginBottom="@dimen/page_title_margin_bottom"
+            android:text="@string/class_access_manage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/classes" />
+
+                <Spinner
+                    android:id="@+id/spinnerClass"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/student" />
+
+                <Spinner
+                    android:id="@+id/spinnerStudent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_right" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/block_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/time" />
+
+                <TextView
+                    android:id="@+id/textViewSelectTime"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_right"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/clickable_text"
+                    android:textStyle="italic|bold"
+                    android:text="@string/click_to_select_time"
+                    android:onClick="OnClickedSelectClassAccessTimeTextView"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/score" />
+
+                <EditText
+                    android:id="@+id/editTextScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/hor_weight_right"
+                    android:inputType="number"
+                    android:hint="@string/score" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/session" />
+
+                <EditText
+                    android:id="@+id/editTextSession"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/hor_weight_right"
+                    android:inputType="number"
+                    android:hint="@string/session" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="@integer/hor_weight_left"
+                    android:gravity="center_vertical"
+                    android:text="@string/other" />
+
+                <EditText
+                    android:id="@+id/editTextOther"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="@integer/hor_weight_right"
+                    android:hint="@string/other"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+                <Button
+                    android:id="@+id/buttonChoice"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/choice_color"
+                    android:onClick="OnClickedChoiceButton"
+                    android:text="@string/choice" />
+                <Button
+                    android:id="@+id/buttonModify"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/modify_color"
+                    android:onClick="OnClickedModifyButton"
+                    android:text="@string/modify" />
+                <Button
+                    android:id="@+id/buttonSubmit"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/add_color"
+                    android:onClick="OnClickedSubmitButton"
+                    android:text="@string/add_new" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/delete_color"
+                    android:onClick="OnClickedDeleteButton"
+                    android:text="@string/delete" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

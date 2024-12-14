@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivities.StuModifyDetialInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/page_padding">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/student_no" />
+
+            <EditText
+                android:id="@+id/editTextNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/student_no" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewInyear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/entry_year" />
+
+            <EditText
+                android:id="@+id/editTextInyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="number"
+                android:hint="@string/entry_year" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewCollege"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/college" />
+
+            <EditText
+                android:id="@+id/editTextCollege"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/college" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDepartment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/department" />
+
+            <EditText
+                android:id="@+id/editTextDepartment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/department" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewProfession"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/profession" />
+
+            <EditText
+                android:id="@+id/editTextProfession"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="@integer/hor_weight_right"
+                android:inputType="textPersonName"
+                android:hint="@string/profession" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewClass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_left"
+                android:gravity="center_vertical"
+                android:text="@string/classes" />
+
+            <Spinner
+                android:id="@+id/spinnerClass"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="@integer/hor_weight_right" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonModifyInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify"
+            android:layout_marginTop="@dimen/block_margin"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/modify_color"
+            android:onClick="OnClickedModifyInfoButton"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginTop="@dimen/block_margin"
+            android:text="@string/to_modify_only_you_want" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

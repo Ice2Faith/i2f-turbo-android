@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FileLocker</string>
+    <string name="OpedirText">处理文件夹</string>
+    <string name="SrcFile">源文件</string>
+    <string name="SrcDir">源文件夹</string>
+    <string name="DrtFile">新文件</string>
+    <string name="DrtDir">新文件夹</string>
+    <string name="Mode">模式</string>
+    <string name="Lock">加密</string>
+    <string name="Unlock">解密</string>
+    <string name="Key">密码</string>
+    <string name="KeyTips">请输入密码</string>
+    <string name="Operate">执行</string>
+    <string name="CleanLog">清空日志</string>
+    <string name="DefaultLog">运行日志</string>
+    <string name="operating">执行中</string>
+    <string name="Running">正在运行，请稍后</string>
+    <string name="ErrorOfZeroPassLen">错误!密码长度不能为 0.</string>
+    <string name="SuccessOfOperateSuccess">成功!文件处理成功.</string>
+    <string name="ErrorOfSourceFileNotExistOrNotPermission">失败!源文件不存在或没有给予存储权限.</string>
+    <string name="ErrorOrWarningOfNotPermissonOrPasswordError">失败或警告，部分没有文件权限或密码错误</string>
+</resources>

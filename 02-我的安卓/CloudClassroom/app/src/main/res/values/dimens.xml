@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="page_padding">25dp</dimen>
+    <dimen name="block_margin">25dp</dimen>
+    <dimen name="page_title_margin_bottom">25dp</dimen>
+    <dimen name="page_title_text_size">28dp</dimen>
+    <dimen name="person_photo_height">150dp</dimen>
+    <dimen name="login_logo_height">240dp</dimen>
+</resources>

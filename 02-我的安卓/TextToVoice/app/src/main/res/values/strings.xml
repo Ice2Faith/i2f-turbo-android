@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">文字转语音纯净版</string>
+    <string name="edittextTips">请输入需要转换的内容</string>
+    <string name="btnVary">朗读</string>
+    <string name="btnStop">停止</string>
+    <string name="btnClear">清空</string>
+    <string name="btnPaste">粘贴</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImgFaceGallaryPadding">5dp</dimen>
+    <dimen name="ImgFaceGallerySpacing">15dp</dimen>
+    <dimen name="SetFaceGroupImgLeftMargin">40dp</dimen>
+    <dimen name="SetFaceGroupImgRightMargin">18dp</dimen>
+    <dimen name="SetFaceChildenItemLeftMargin">60dp</dimen>
+    <dimen name="SetFaceChilenItemFontSize">24dp</dimen>
+    <dimen name="TabHostTabBarFontSize">24dp</dimen>
+    <dimen name="GuideFaceGrideItemFontSize">18dp</dimen>
+    <dimen name="GuideFaceGrideItemPadding">5dp</dimen>
+    <dimen name="MsgFaceListItemSmallTextFontSize">16dp</dimen>
+    <dimen name="MsgFaceImgLeftMargin">15dp</dimen>
+    <dimen name="MsgFaceImgRightMargin">20dp</dimen>
+
+    <dimen name="login_page_tvaccountlogin_padding_right">25dp</dimen>
+    <dimen name="hello_page_tvtimer_margin_top">15dp</dimen>
+    <dimen name="hello_page_tvtimer_margin_right">15dp</dimen>
+    <dimen name="updateinfo_page_padding">15dp</dimen>
+    <dimen name="updateinfo_page_modify_btn_margin_top">20dp</dimen>
+    <dimen name="updateinfo_page_modify_btn_margin_bottom">20dp</dimen>
+</resources>
